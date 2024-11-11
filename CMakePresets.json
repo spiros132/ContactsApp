@@ -1,0 +1,27 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "default",
+            "displayName": "Default",
+            "description": "Using Clang, default configuration",
+            "binaryDir": "${sourceDir}/build",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install",
+                "CMAKE_C_COMPILER": "C:/Users/spiros/Workspace/External/llvm/build/bin/clang.exe",
+                "CMAKE_CXX_COMPILER": "C:/Users/spiros/Workspace/External/llvm/build/bin/clang++.exe",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "default",
+            "displayName": "Default",
+            "targets": [
+                "all"
+            ]
+        }
+    ]
+}
